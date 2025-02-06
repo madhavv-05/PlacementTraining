@@ -76,7 +76,7 @@ if number1 > number2: arger_number = number1
 else:larger_number = number2
 
 print("The larger number is:", larger_number)
-"""
+
 
 number1=int(input("Enter number 1: "))
 number2=int(input("Enter number 2: "))
@@ -88,3 +88,65 @@ if(number2>largest): largest=number2
 if(number3>largest): largest=number3
 
 print("largest number is: ",largest)
+
+
+
+
+
+Write a program that utilizes the concept of conditional execution, takes a string as input, and:
+prints the sentence "Yes - Spathiphyllum is the best plant ever!" to the screen if the inputted string is "Spathiphyllum" (upper-case)
+prints "No, I want a big Spathiphyllum!" if the inputted string is "spathiphyllum" (lower-case)
+
+
+
+
+plant=input("W=Enter name of the plant:  ")
+
+if plant=="Spathiphyllum":
+    print("Yes - Spathiphyllum is the best plant ever!")
+elif plant=="spathiphyllum":
+    print("No, I want a big Spathiphyllum!")
+else: 
+    print("Spathiphyllum! Not ", plant)
+
+
+
+
+largest=-999999999
+number=int(input("Enter a number: "))
+
+
+
+while number!=-1:
+    if(number>largest):
+        largest=number
+    number=int(input("Enter a number(enter -1 to stop): "))
+
+print("largest number is: ",largest)
+
+
+Write a program that reads a sequence of numbers and counts how many numbers are even and how many are odd. The program terminates when zero is entered.
+
+
+number=int(input("Enter a number: "))
+even=0
+odd=0
+
+
+while number!=0:
+   
+    if(number%2==0):
+        even=even+1
+
+    else:
+        odd=odd+1
+    number=int(input("Enter a number(enter 0 to stop): "))
+
+print("even numbers are: ",even)
+print("odd numbers are: ",odd)
+
+"""
+
+for counter in range(100):
+    print("current value of counter is: ",counter)
+    
