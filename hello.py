@@ -145,8 +145,71 @@ while number!=0:
 print("even numbers are: ",even)
 print("odd numbers are: ",odd)
 
-"""
+
 
 for counter in range(100):
     print("current value of counter is: ",counter)
+
+
     
+for counter in range(2,8,3):
+    print("current value of counter is: ",counter)
+
+
+power=1
+for exp in range(16):
+    print("2 to the power of ",exp," is ",power)
+    power*=2
+
+ 
+
+
+
+import time
+
+for counter in range(5):
+    if counter==2:
+        continue
+    print(counter+1, " mississippi")
+    
+    time.sleep(1)
+
+print("Ready or not, Here I come!")
+
+
+
+largest=-9999999999
+number=int(input("Enter a number(enter -1 to stop): "))
+while True:
+    if number==-1:
+        break
+    if(number>largest):
+        largest=number
+    number=int(input("Enter a number(enter -1 to stop): "))
+
+print("largest number is: ",largest)
+
+
+
+
+word=input("Enter a word: ")
+word_upper=word.upper()
+
+for letter in word_upper:
+    if letter in ["A","E","I","O","U"]:
+        continue
+    print(letter)
+
+"""
+
+blocks=int(input("Enter numbe rof blocks: "))
+sum=0
+for counter in range(blocks):
+    if sum>blocks:
+        break
+    
+    
+    sum+=counter
+    
+
+print("height is ",counter-1)
