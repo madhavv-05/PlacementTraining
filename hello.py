@@ -200,7 +200,7 @@ for letter in word_upper:
         continue
     print(letter)
 
-"""
+
 
 blocks=int(input("Enter numbe rof blocks: "))
 sum=0
@@ -213,3 +213,47 @@ for counter in range(blocks):
     
 
 print("height is ",counter-1)
+
+
+
+
+
+block_size= int(input("Enter the number of blocks: "))
+ 
+blocks_needed_at_level = 0 
+height = 0  
+
+for _ in range(block_size):  
+    if (blocks_needed_at_level + (height + 1)) <= block_size:  
+        height += 1
+        blocks_needed_at_level += height
+    else:
+        break  
+
+print("Maximum height of the pyramid:", height)
+
+
+
+c0=int(input("Enter a number: "))
+steps=0
+
+
+while (c0!=1):
+    if c0%2==0:
+        c0=c0/2
+        steps+=1
+        print(c0)
+    else:
+        c0=(c0*3)+1
+        steps+=1
+        print(c0)
+
+print("Number of steps neede are: ",steps)
+
+"""
+
+numbers=[10,20,23,30]
+print("original list conatins: ",numbers)
+
+numbers[0]=100
+print("new list constains: ",numbers)
