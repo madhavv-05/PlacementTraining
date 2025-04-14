@@ -250,10 +250,65 @@ while (c0!=1):
 
 print("Number of steps neede are: ",steps)
 
-"""
+
 
 numbers=[10,20,23,30]
 print("original list conatins: ",numbers)
 
 numbers[0]=100
 print("new list constains: ",numbers)
+
+
+numbers = [10, 5, 7, 2, 1]
+print ("first element content: ", numbers [0] )
+print ("second element content: ", numbers [1] )
+print ("third element content: ", numbers [2])
+print ("fourth element content: ", numbers [3] )
+print ("fifth element content: ", numbers [4])
+
+numbers[0]=11
+print ("first element content: ", numbers [0] )
+
+numbers[1]=numbers[5]
+print ("new list is:")
+print ("first element content: ", numbers [0] )
+print ("second element content: ", numbers [1] )
+print ("third element content: ", numbers [2])
+print ("fourth element content: ", numbers [3] )
+print ("fifth element content: ", numbers [4])
+
+
+
+numbers = [10, 5, 7, 2, 1]
+print("size of numbers is: ",len(numbers))
+
+
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+print("List: ", list)
+print("5th element: ", list[4])
+
+del list[0]
+print("List: ", list)
+print("5th element: ", list[4])
+
+del list[4]
+print(" List: ", list)
+print("5th element: ", list[4])
+
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+for count in range(len(list)-1):
+    del list[0]
+    print(list)
+print("List: ", list)
+
+del list
+print("List: ", list)
+"""
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+print(list[-1])
+
+print(list)
+for count in range(len(list)):
+    #print("count:", count) # 0 1 2 4 5227 8:9
+    print("list[-",count+1,"]:", list[-1*(count+1)])
