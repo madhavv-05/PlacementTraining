@@ -159,6 +159,7 @@ print("Cloned list:", copy)
 
 
 # Question 19: Write a Python program to find the list of words that are longer than n from a given list of words.
+
 words = ["hello", "okay","abccdh", "world", "hi", "mouse"]
 n = 3
 result = []
@@ -169,6 +170,7 @@ print("Words longer than", n, ":", result)
 
 
 # Question 20: Write a Python function that takes two lists and returns True if they have at least one common member.
+
 def common_member(list1, list2):
     for item in list1:
         if item in list2:
