@@ -159,7 +159,7 @@ print("Cloned list:", copy)
 
 
 # Question 19: Write a Python program to find the list of words that are longer than n from a given list of words.
-words = ["hello", "sun", "world", "hi", "sky"]
+words = ["hello", "okay","abccdh", "world", "hi", "mouse"]
 n = 3
 result = []
 for word in words:
