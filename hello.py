@@ -304,7 +304,7 @@ print("List: ", list)
 
 del list
 print("List: ", list)
-"""
+
 list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 print(list[-1])
 
@@ -312,3 +312,21 @@ print(list)
 for count in range(len(list)):
     #print("count:", count) # 0 1 2 4 5227 8:9
     print("list[-",count+1,"]:", list[-1*(count+1)])
+
+    """
+
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+list.append(80)
+list.insert(1,10)
+
+print(list)
+
+for li in list:
+    print(li)
+
+my_list = [10, 1, 8, 3, 5]
+
+my_list[0], my_list[4] = my_list[4], my_list[0]
+my_list[1], my_list[3] = my_list[3], my_list[1]
+print(my_list)
+
