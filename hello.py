@@ -313,7 +313,7 @@ for count in range(len(list)):
     #print("count:", count) # 0 1 2 4 5227 8:9
     print("list[-",count+1,"]:", list[-1*(count+1)])
 
-    """
+  
 
 list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 list.append(80)
@@ -329,4 +329,157 @@ my_list = [10, 1, 8, 3, 5]
 my_list[0], my_list[4] = my_list[4], my_list[0]
 my_list[1], my_list[3] = my_list[3], my_list[1]
 print(my_list)
+
+"""
+
+list1 = [1,2,3,4,5,6]
+list2 = list1[:]
+list1 [0] = 2
+
+print (list2)
+
+list3=list1[-1:1]
+print(list3)
+
+
+print( 1 in list1)
+print( 1 not in list1)
+print (10 in list1)
+
+my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+
+num=5
+
+for i in range(len(my_list)):
+    if my_list[i] == num:
+        print("Number found at index", i)
+
+
+list1=[3,7,11,42,34,49]
+list2=[5,11,9,42,3,49]
+count=0
+for num1 in list1:
+    if num1 in list2:
+        count+=1
+    
+print(count)
+
+
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+list=[]
+
+for num in my_list:
+    if num not in list:
+        list.append(num)
+print(list)
+
+
+list=8*["WHITE_PAWN"]
+print (list)
+
+list=['WHITE_PAWN' for i in range(8)]
+
+print(list)
+
+
+squares=[x**2 for x in range(10)]
+
+odds=[x for x in squares if x%2!=0]
+print(odds)
+
+
+board = []
+for i in range(8):
+    row = ["EMPTY" for j in range(8)]
+    board.append(row)
+print(board)
+
+
+temps=[[hours for hours in range(24)] for days in range(31)]
+
+
+sum=0
+for day in range(31):
+    sum=sum+temps[day][11]
+avg=sum/31
+print(avg)
+
+temps=[[hours for hours in range(24)] for days in range(31)]
+highest=-200
+for day in range(31):
+    for hour in range(24):
+        highest = max(highest, temps[day][hour])
+print(highest)
+
+
+def func(name):
+    print("hello: ",name)
+
+
+name=input()
+func(name)
+
+def introduction(first_name, last_name) :
+    print ("Hello, my name is", first_name, last_name)
+
+introduction (first_name = "James", last_name = "Bond")
+introduction (last_name = "Skywalker", first_name = "Luke")
+
+
+def adding(a, b, c):
+    print (a, "+", b, "+", c, "=", a + b + c)
+
+adding(c=2,b=3,a=1)
+
+print ("Enter a value: ")
+a = int (input () )
+
+print ("Enter a value: ")
+b = int(input())
+
+print ("Enter a value: ")
+c = int(input())
+
+
+def message () :
+    print ("Enter a value: ")
+
+print(message())
+print ("We start here.")
+message()
+print ("We end here.")
+
+
+def list_sum(lst) :
+    s= 0
+
+    for elem in lst:
+        s += elem
+
+    return s
+print(list_sum(5))
+
+
+def strange_list_fun(n) :
+    strange_list = []
+
+    for i in range(0, n):
+        strange_list.insert(0, i)
+
+    return strange_list
+
+print(strange_list_fun(5))
+
+def prime(n):
+
+    prime_list=[]
+    for num in range(2,n):
+        for i in range(2,num):
+            if num%i==0:
+                break
+        else:
+            prime_list.append(num)
+    print(prime_list)
+
+prime(20)
 
