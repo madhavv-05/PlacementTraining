@@ -482,4 +482,178 @@ def prime(n):
     print(prime_list)
 
 prime(20)
+print(prime_list)
+var=6
+def mult():
+    global var
+    
+    var=2
+    print( 2*var)
 
+mult()
+print(var)
+l=9
+
+def my_function(n):
+    print ("I got", n)
+    n += 1
+    print ("I have", l)
+
+var = 1
+my_function (var)
+print (var)
+
+
+def my_function(my_list_1): 
+    print("Print #1:", my_list_1)
+    print("Print #2:", my_list_2)
+    my_list_1 = [0, 1]
+    print("Print #3:", my_list_1)
+    print("Print #4:", my_list_2)
+
+my_list_2 = [2, 3]
+my_function(my_list_2)
+print("Print #5:", my_list_2)
+
+def evaluate_bmi(weight, height):
+    
+    if height < 1.0 or height >2.5 or \
+        weight < 20 or weight >200:
+        return None
+
+    bmi = weight / (height ** 2)
+    bmi = round(bmi, 2)
+    print("Your BMI is:", bmi)
+
+evaluate_bmi(450, 1.2)
+
+
+def lb_to_kg (lb):
+    return lb * 0.45359237
+
+print (lb_to_kg (1))
+
+def ft_and_inch_to_m(ft, inch = 0.0):
+    return ft * 0.3048 + inch * 0.0254
+
+print(ft_and_inch_to_m(5, 11))
+print (evaluate_bmi (weight = lb_to_kg(176), height = ft_and_inch_to_m(5, 7)))
+
+
+def is_a_triangle(a, b, c):
+    # if a + b <= c:
+    #     return False
+    # if b + c <= a:
+    #     return False
+    # if c + a <= b:
+    #     return False
+
+
+    # if a + b <=c and b + c <= a and c + a <=b:
+    #     return False
+    # return True
+
+    return a + b > c and b + c > a and c + a > b
+
+print(is_a_triangle(1, 1, 1))
+print(is_a_triangle(1, 1, 3))
+
+
+a = float (input ('Enter the first side\'s length: ') )
+b = float (input ('Enter the second side\'s length: ') )
+c = float (input ('Enter the third side\'s length: ') )
+
+if is_a_triangle(a, b, c):
+    print ('Yes, it can be a triangle.')
+else:
+    print ('No, it can\'t be a triangle.')
+
+
+ 
+
+def is_a_right_triangle(a, b, c):
+    if not is_a_triangle(a, b, c):
+        return False
+    if c > a and c > b:
+        return c ** 2 == a ** 2 + b ** 2
+    if b > a and b > c:
+        return b ** 2 == a ** 2 + c ** 2
+    if a > b and a > c:
+        return a ** 2 == b ** 2 + c ** 2
+print(is_a_right_triangle(5, 3, 4))
+print(is_a_right_triangle(1, 3, 4))
+
+
+def heron(a, b, c):
+    p = (a + b + c) / 2
+    return (p * (p - a) * (p - b) * (p - c)) ** 0.5
+def area_of_triangle(a, b, c):
+    if not is_a_triangle(a, b, c) :
+        return None
+    return heron(a, b, c)
+print(area_of_triangle (1., 1., 2. ** .5))
+
+
+def factorial_function(n):
+    if n < 0:
+        return None
+    if n < 2:
+        return 1
+
+    product = 1
+    for i in range (2, n + 1):
+        product *= i
+    return product
+
+for n in range(1, 6): 
+    print(n, factorial_function(n))
+
+def fibonacci(n):
+    if n < 0:
+        return None
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+
+    a, b = 0, 1
+    for i in range(2, n + 1):
+        a, b = b, a + b
+    return b
+for n in range(10):
+    print(n, fibonacci(n))
+
+def factorial(n):
+    if n < 0:
+        return None
+    if n < 2:
+        return 1
+    return n * factorial(n - 1)
+print(factorial(5))
+
+
+def fibonacci(n):
+    if n < 1:
+        return None
+    if n<3:
+        return 1
+    
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+print(fibonacci(10))
+
+tuple1= 1,
+tuple2= 6, 7, 8, 9, 10
+
+print(tuple1)
+print(type(tuple1))
+print(tuple2)
+print(type(tuple2))
+
+tuple1=tuple1 + tuple2
+print(tuple1)
+
+tuple3=tuple1*5
+
+print(5 in tuple3)
+print(6 not in tuple3)
